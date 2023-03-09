@@ -1,0 +1,43 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": [
+    "http://aghcc-srv05.imp.fu-berlin.de:33000",
+    "https://maps.googleapis.com"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "local": "next build && next export -o ../backend/static_html",
+    "build_producton": "next build && next export -o ./static_html",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.13",
+    "@chakra-ui/react": "^2.3.2",
+    "@chakra-ui/styled-system": "^2.3.5",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@react-google-maps/api": "^2.17.0",
+    "axios": "^1.2.1",
+    "framer-motion": "^7.6.19",
+    "js-cookie": "^3.0.1",
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-icons-md": "^1.1.0",
+    "react-tracking": "^9.3.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
+    "mini-css-extract-plugin": "^2.6.1",
+    "typescript": "^4.9.3"
+  }
+}

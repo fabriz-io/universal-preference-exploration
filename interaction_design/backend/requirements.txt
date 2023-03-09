@@ -1,0 +1,7 @@
+Flask
+Flask-Cors
+Flask-HTTPAuth
+numpy
+scipy
+gunicorn
+pandas
